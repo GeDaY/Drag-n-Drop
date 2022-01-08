@@ -1,0 +1,32 @@
+@import './reset';
+@import './variables';
+@import './mixin';
+@import './fonts';
+
+@import '~bootstrap/scss/bootstrap';
+
+@import './island';
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: #7f7fd5;
+  background: linear-gradient(to right, #91eae4, #86a8e7, #7f7fd5);
+}
+
+//  ========================================
+//  header styles start
+//  ========================================
+
+//  header styles end
+
+// ========================================
+// main styles start
+// ========================================
+
+// main styles end
+
+// ========================================
+// footer styles start
+// ========================================
+
+// footer styles end

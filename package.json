@@ -1,0 +1,38 @@
+{
+  "name": "drag-n-drop",
+  "version": "1.0.0",
+  "description": "Run build `npm run build`",
+  "main": "app.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack --watch --progress"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeDaY/Drag-n-Drop.git"
+  },
+  "author": "Henadzi Borodavitsyn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeDaY/Drag-n-Drop/issues"
+  },
+  "homepage": "https://github.com/GeDaY/Drag-n-Drop#readme",
+  "devDependencies": {
+    "css-loader": "^6.5.1",
+    "eslint": "^8.6.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.4",
+    "favicons": "^6.2.2",
+    "favicons-webpack-plugin": "^5.0.2",
+    "prettier": "2.5.1",
+    "sass": "^1.47.0",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.2",
+    "bootstrap": "^5.1.3"
+  }
+}
