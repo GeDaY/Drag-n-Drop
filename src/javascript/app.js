@@ -1,16 +1,11 @@
 import '../scss/app.scss'
 import 'bootstrap'
 
-// import { Form } from './form'
-// import { Posts } from './posts'
-// import { Post } from './post'
+import { Sticker } from './sticker'
 
-// const formElement = document.querySelector('#form')
-// const postsElement = document.querySelector('#posts')
-// const postElement = document.querySelector('#post')
+const containerElem = document.querySelector('#container')
+const createStickerButtonElem = document.querySelector('#createStickerButton')
 
-// const form = new Form(formElement)
-// const posts = new Posts(postsElement)
-// const post = new Post(postElement)
-
-console.log('HELLO')
+createStickerButtonElem.addEventListener('click', () => {
+  new Sticker(containerElem)
+})
