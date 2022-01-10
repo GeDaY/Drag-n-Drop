@@ -27,6 +27,8 @@ class DragDrop {
     document.addEventListener('mousemove', this.handleMouseMove)
     document.addEventListener('mouseup', this.handleMouseUp)
 
+    this.element.classList.add('sticker_active')
+
     this.calcShifts(clientY, clientX)
     this.setPosition(clientY, clientX)
   }
@@ -38,6 +40,8 @@ class DragDrop {
   handleMouseUp({ clientY, clientX }) {
     document.removeEventListener('mousemove', this.handleMouseMove)
     document.removeEventListener('mouseup', this.handleMouseUp)
+
+    this.element.classList.remove('sticker_active')
 
     this.setPosition(clientY, clientX)
   }

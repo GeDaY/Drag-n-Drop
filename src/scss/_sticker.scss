@@ -74,4 +74,8 @@ $component: 'sticker';
   .button_delete {
     background-color: rgb(206, 59, 59);
   }
+
+  &_active {
+    z-index: 100;
+  }
 }

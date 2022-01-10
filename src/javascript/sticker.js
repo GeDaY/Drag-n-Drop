@@ -35,10 +35,7 @@ class Sticker {
 
       this.data.content = editedContent
 
-      const template = this.getTemplate()
-      this.stickerElement.innerHTML = template
-
-      this.stickerElement.classList.remove('sticker_edit')
+      this.update()
     }
   }
 
@@ -46,11 +43,10 @@ class Sticker {
     const { target } = event
 
     if (target.dataset.role === 'delete') {
-      // console.log('del')
-      // const
       this.stickerElement.remove()
     }
   }
+
   getTemplate() {
     return `
 		<div class="sticker__content">${this.data.content}</div>
@@ -78,7 +74,10 @@ class Sticker {
   }
 
   update() {
-    this.stickerElement
+    const template = this.getTemplate()
+    this.stickerElement.innerHTML = template
+
+    this.stickerElement.classList.remove('sticker_edit')
   }
 }
 
