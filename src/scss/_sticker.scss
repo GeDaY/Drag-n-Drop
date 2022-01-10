@@ -32,7 +32,8 @@ $component: 'sticker';
     display: none;
   }
 
-  &_edit &__content {
+  &_edit &__content,
+  &_edit .button_delete {
     display: none;
   }
 
@@ -53,7 +54,8 @@ $component: 'sticker';
     padding: 0;
   }
 
-  .button_save {
+  .button_save,
+  .button_delete {
     position: absolute;
     bottom: 15px;
     right: 15px;
@@ -63,5 +65,13 @@ $component: 'sticker';
       NotoColorEmoji, 'Noto Color Emoji', 'Segoe UI Symbol', 'Android Emoji',
       EmojiSymbols, -apple-system, system-ui, 'Segoe UI', Roboto,
       'Helvetica Neue', 'Noto Sans', sans-serif;
+  }
+
+  .button_save {
+    background-color: rgb(99, 199, 245);
+  }
+
+  .button_delete {
+    background-color: rgb(206, 59, 59);
   }
 }
