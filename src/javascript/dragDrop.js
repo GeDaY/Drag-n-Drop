@@ -49,8 +49,8 @@ class DragDrop {
   calcShifts(y, x) {
     const { top, left } = this.element.getBoundingClientRect()
 
-    this.shifts.y = y - top
-    this.shifts.x = x - left
+    this.shifts.y = y - top + 10
+    this.shifts.x = x - left + 10
   }
 
   setPosition(top, left) {

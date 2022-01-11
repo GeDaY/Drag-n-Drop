@@ -51,10 +51,15 @@ class Sticker {
     return `
 		<div class="sticker__content">${this.data.content}</div>
 		
-		<button type="button" data-role="delete" class="button_delete">Delete</button>
+		<button type="button" data-role="delete" class="button_delete">
+    <svg class="pe-none" width="16" height="16"><use href="#trash"/></svg>
+    </button>
+
 		<form class="sticker__form">
 			<textarea name="content">${this.data.content}</textarea>
-			<button type="button" data-role="save" class="button_save">Save</button>
+			<button type="button" data-role="save" class="button_save">
+      <svg class="pe-none" width="16" height="16"><use href="#save"/></svg>
+      </button>
 			</form>
 		`
   }
